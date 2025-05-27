@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Solutions</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <!-- Üst Navigasyon -->
+  <header class="navbar">
+    <div class="logo-container">
+      <img src="{{ url_for('static', filename='images/Logo.png') }}" alt="Beyond Emissions Logo" class="site-logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/brands">Brands</a></li>
+        
+        <!-- Navbar içine eklenecek -->
+        <li class="dropdown">
+          <a href="#">Emissions</a>
+          <ul class="dropdown-menu">
+            <li><a href="/common-gases">Common Gases</a></li>
+            <li><a href="/dangers">Dangers</a></li>
+            <li><a href="/solutions">Solutions</a></li>
+          </ul>
+        </li>
+
+        <!-- Dropdown Başlangıcı -->
+        <li class="dropdown">
+          <a href="#">About</a>
+          <ul class="dropdown-menu">
+            <li><a href="/standarts">Carbon Emission Standards</a></li>
+            <li><a href="/mission">Our Mission</a></li>
+            <li><a href="/about/history">History</a></li>
+          </ul>
+        </li>
+        <!-- Dropdown Bitişi -->
+
+      </ul>
+    </nav>
+  </header>
+
+  <div class="solutions-container">
+    <h1 class="solutions-title">🚘 Solutions to Reduce Car Emissions</h1>
+
+    <h2 class="solutions-subtitle">🔋 Electric Vehicle Innovations</h2>
+    <div class="solution-card">
+      <img src="{{ url_for('static', filename='images/electric-battery.jpg') }}" alt="Battery Technology">
+      <div class="solution-text">
+        <h3>1. Advanced Battery Technology</h3>
+        <p>Electric vehicles (EVs) use lithium-ion batteries that last longer, charge faster, and store more energy than older types. This means EVs can travel farther on a single charge, making them a better alternative to gasoline cars. Because they don't burn fuel, they produce no tailpipe emissions, which helps reduce greenhouse gases that cause climate change.</p>
+      </div>
+    </div>
+
+    <div class="solution-card reverse">
+      <img src="{{ url_for('static', filename='images/regenerative-braking.jpg') }}" alt="Regenerative Braking">
+      <div class="solution-text">
+        <h3>2. Regenerative Braking</h3>
+        <p>When a car slows down, the energy from braking is usually lost as heat. Regenerative braking captures some of this energy and stores it back in the battery. This improves the car’s overall efficiency, meaning it uses less electricity and produces fewer emissions indirectly by reducing the need for charging from fossil-fuel power plants.</p>
+      </div>
+    </div>
+
+    <div class="solution-card">
+      <img src="{{ url_for('static', filename='images/solar-roof.jpg') }}" alt="Solar Panels">
+      <div class="solution-text">
+        <h3>3. Solar Roof Integration</h3>
+        <p>Some electric cars have solar panels on their roofs that convert sunlight into electricity. This extra energy helps charge the battery and extends the driving range without using electricity from the grid. Using solar energy reduces dependence on fossil fuels and lowers the carbon footprint of driving.</p>
+      </div>
+    </div>
+
+    <h2 class="solutions-subtitle">⛽ Solutions for Gasoline & Diesel Cars</h2>
+    <div class="solution-card reverse">
+      <img src="{{ url_for('static', filename='images/catalytic-converter.png') }}" alt="Catalytic Converter">
+      <div class="solution-text">
+        <h3>4. Catalytic Converters</h3>
+        <p>Gasoline and diesel cars release harmful gases like nitrogen oxides (NOx), carbon monoxide (CO), and hydrocarbons that contribute to air pollution and climate change. Catalytic converters chemically transform these dangerous gases into less harmful ones, helping to reduce smog and greenhouse gas emissions.</p>
+      </div>
+    </div>
+
+    <div class="solution-card">
+      <img src="{{ url_for('static', filename='images/eco-mode.jpg') }}" alt="Eco Driving Mode">
+      <div class="solution-text">
+        <h3>5. Eco Driving Modes</h3>
+        <p>Many modern cars have "eco" modes that adjust engine and transmission settings to use fuel more efficiently. By optimizing fuel consumption, these modes help lower carbon dioxide (CO₂) emissions, which are a major cause of global warming and climate change.</p>
+      </div>
+    </div>
+
+    <div class="solution-card reverse">
+      <img src="{{ url_for('static', filename='images/engine-upgrade.jpg') }}" alt="Engine Upgrade">
+      <div class="solution-text">
+        <h3>6. Engine Optimization</h3>
+        <p>Improving engine components like fuel injectors and turbochargers helps cars burn fuel more completely and efficiently. This means less fuel is wasted and fewer harmful gases are emitted. Better combustion reduces emissions of greenhouse gases and pollutants, which helps slow climate change and improves air quality.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

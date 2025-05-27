@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Emission Dangers</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo-container">
+      <img src="{{ url_for('static', filename='images/Logo.png') }}" alt="Beyond Emissions Logo" class="site-logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/brands">Brands</a></li>
+        <li class="dropdown">
+          <a href="#">Emissions</a>
+          <ul class="dropdown-menu">
+            <li><a href="/common-gases">Common Gases</a></li>
+            <li><a href="/dangers">Dangers</a></li>
+            <li><a href="/solutions">Solutions</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#">About</a>
+          <ul class="dropdown-menu">
+            <li><a href="/standarts">Carbon Emission Standards</a></li>
+            <li><a href="/mission">Our Mission</a></li>
+            <li><a href="/about/history">History</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="dangers-hero">
+    <h1>⚠️ Dangers of Vehicle Emissions</h1>
+    <p>Vehicle emissions are more than just an environmental issue — they pose serious risks to public health, ecosystems, and climate stability. Here's what you need to know.</p>
+  </section>
+
+  <!-- DANGERS LIST SECTION -->
+  <section class="dangers-list">
+    <h2>🚫 Key Dangers</h2>
+    <ul>
+      <li>🫁 <strong>Respiratory Problems:</strong> Particulate matter and NOx can cause asthma and lung diseases.</li>
+      <li>☁️ <strong>Smog Formation:</strong> VOCs and NOx create ground-level ozone, harmful to lungs and visibility.</li>
+      <li>🌍 <strong>Climate Change:</strong> CO₂ and methane trap heat, leading to rising temperatures.</li>
+      <li>🧠 <strong>Neurological Damage:</strong> Long-term exposure to benzene and heavy metals affects brain development.</li>
+      <li>🌱 <strong>Ecosystem Harm:</strong> Acid rain and ground ozone damage crops, forests, and aquatic life.</li>
+      <li>💔 <strong>Cardiovascular Diseases:</strong> Fine particles increase heart disease and stroke risk.</li>
+    </ul>
+  </section>
+
+</body>
+</html>

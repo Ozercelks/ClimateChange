@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Common Gases - Vehicle Emissions</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+     <!-- Üst Navigasyon -->
+  <header class="navbar">
+    <div class="logo-container">
+      <img src="{{ url_for('static', filename='images/Logo.png') }}" alt="Beyond Emissions Logo" class="site-logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/brands">Brands</a></li>
+        
+        <!-- Navbar içine eklenecek -->
+        <li class="dropdown">
+          <a href="#">Emissions</a>
+          <ul class="dropdown-menu">
+            <li><a href="/common-gases">Common Gases</a></li>
+            <li><a href="/dangers">Dangers</a></li>
+            <li><a href="/solutions">Solutions</a></li>
+          </ul>
+        </li>
+
+        <!-- Dropdown Başlangıcı -->
+        <li class="dropdown">
+          <a href="#">About</a>
+          <ul class="dropdown-menu">
+            <li><a href="/standarts">Carbon Emission Standards</a></li>
+            <li><a href="/mission">Our Mission</a></li>
+            <li><a href="/history">History</a></li>
+          </ul>
+        </li>
+        <!-- Dropdown Bitişi -->
+
+      </ul>
+    </nav>
+  </header>
+
+  <div class="common-gases">
+    <h1>Common Gases Emitted by Vehicles</h1>
+    <div class="gas-list">
+      <div class="gas-card">
+        <h2>🚗 Carbon Dioxide (CO₂)</h2>
+        <p>Main greenhouse gas emitted from fuel combustion, contributing to global warming.</p>
+      </div>
+      <div class="gas-card">
+        <h2>🌫 Nitrogen Oxides (NO₂)</h2>
+        <p>Produced during high-temperature combustion; contributes to smog and acid rain.</p>
+      </div>
+      <div class="gas-card">
+        <h2>🔋 Methane (CH₄)</h2>
+        <p>Released in small amounts from vehicles using natural gas or biogas; potent greenhouse effect.</p>
+      </div>
+      <div class="gas-card">
+        <h2>⚗ Volatile Organic Compounds (VOCs)</h2>
+        <p>Contribute to ozone formation and smog; come from unburned fuel vapors.</p>
+      </div>
+      <div class="gas-card">
+        <h2>🧪 Sulfur Dioxide (SO₂)</h2>
+        <p>More common in diesel fuels; contributes to acid rain and respiratory problems.</p>
+      </div>
+      <div class="gas-card">
+        <h2>🔧 Particulate Matter (PM)</h2>
+        <p>Microscopic particles that penetrate lungs, often from diesel engines and wear of tires/brakes.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

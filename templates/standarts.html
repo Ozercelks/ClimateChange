@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Carbon Emission Standards - Beyond Emissions</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+  <!-- Navigasyon Barı -->
+  <header class="navbar">
+    <div class="logo-container">
+      <a href="/"><img src="{{ url_for('static', filename='images/Logo.png') }}" alt="Beyond Emissions Logo" class="site-logo"></a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/brands">Brands</a></li>
+        
+        <!-- Navbar içine eklenecek -->
+        <li class="dropdown">
+          <a href="#">Emissions</a>
+          <ul class="dropdown-menu">
+            <li><a href="/common-gases">Common Gases</a></li>
+            <li><a href="/dangers">Dangers</a></li>
+            <li><a href="/solutions">Solutions</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="/about">About</a>
+          <ul class="dropdown-menu">
+            <li><a href="/standarts">Carbon Emission Standards</a></li>
+            <li><a href="/mission">Our Mission</a></li>
+            <li><a href="/about/history">History</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="standards-container">
+
+  <!-- Üst blok -->
+  <div class="standards-block top">
+    <div class="standards-text">
+      <h2>Carbon Emission Standards</h2>
+      <p>
+        Carbon emissions standards regulate the release of greenhouse gases 
+        from vehicles and industries. They aim to reduce air pollution and 
+        combat climate change by limiting the amount of carbon dioxide and 
+        other harmful gases emitted.
+      </p>
+    </div>
+    <div class="standards-image">
+      <img src="static\images\carbon.jpg" alt="Carbon Emission Standards Image">
+    </div>
+  </div>
+
+  <div class="standards-block reverse">
+  <div class="standards-image">
+    <img src="static\images\standarts.png" alt="Emission Chart">
+  </div>
+  <div class="standards-text">
+    <h2>🚗 Automotive Carbon Emission Standards</h2>
+    <ul>
+      <li>🌍 <strong>EU (2020–2024):</strong> 95 g CO₂/km for cars, 147 g CO₂/km for vans</li>
+      <li>🔧 <strong>EU (2025–2029):</strong> Target lowered to 93.6 g CO₂/km for cars, 153.9 g CO₂/km for vans</li>
+      <li>⚡ <strong>EU (2030–2034):</strong> Further cut to 49.5 g CO₂/km for cars, 90.6 g CO₂/km for vans</li>
+      <li>🚫 <strong>EU (2035 onwards):</strong> Only zero-emission vehicles (e.g., electric, hydrogen) can be sold</li>
+      <li>🇺🇸 <strong>USA (EPA 2032 target):</strong> Fleet average of 85 g CO₂/mile for light-duty vehicles</li>
+    </ul>
+  </div>
+</div>
+
+</div>
+
+</body>
+</html>

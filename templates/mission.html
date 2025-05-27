@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About - Beyond Emissions</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+  <!-- Navigasyon Barı -->
+  <header class="navbar">
+    <div class="logo-container">
+      <a href="/"><img src="{{ url_for('static', filename='images/Logo.png') }}" alt="Beyond Emissions Logo" class="site-logo"></a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/brands">Brands</a></li>
+
+        <!-- Navbar içine eklenecek -->
+        <li class="dropdown">
+          <a href="#">Emissions</a>
+          <ul class="dropdown-menu">
+            <li><a href="/common-gases">Common Gases</a></li>
+            <li><a href="/dangers">Dangers</a></li>
+            <li><a href="/solutions">Solutions</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="/about">About</a>
+          <ul class="dropdown-menu">
+            <li><a href="/standarts">Carbon Emission Standards</a></li>
+            <li><a href="/mission">Our Mission</a></li>
+            <li><a href="/history">History</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="about-mission">
+  <div class="mission-block">
+    <div class="mission-text">
+      <h2>Our Mission</h2>
+      <p>
+        At <strong>Beyond Emissions</strong>, our mission is to drive awareness, innovation, and action toward a cleaner and more sustainable future.  
+        We explore the impact of automobiles on climate change and advocate for environmentally responsible solutions in the automotive industry.
+        <br><br>
+        ✅ Educate people about carbon emissions from vehicles  
+        <br>
+        ✅ Promote electric and hybrid technologies  
+        <br>
+        ✅ Inspire automotive innovation beyond fossil fuels  
+      </p>
+    </div>
+    <div class="mission-image">
+      <img src="static\images\evija.jpg" alt="Sustainability">
+    </div>
+  </div>
+
+  <div class="mission-block reverse">
+    <div class="mission-image">
+      <img src="static/images/mission2.jpg" alt="Green Automotive">
+    </div>
+    <div class="mission-text">
+      <h2>Driving Change</h2>
+      <p>
+        We believe that the road to a greener tomorrow starts with informed choices and bold change.  
+        Through design, engineering, and education, we aim to inspire a generation that moves beyond emissions.
+        <br><br>
+        🌱 Sustainable thinking  
+        <br>
+        ⚡ Innovation in motion  
+        <br>
+        🔧 Eco-conscious design principles  
+      </p>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

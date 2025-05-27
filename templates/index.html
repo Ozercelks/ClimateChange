@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beyond Emissions</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+  <!-- Tam Ekran Arka Plan Videosu -->
+  <div class="video-container">
+    <video autoplay muted loop playsinline id="bg-video">
+      <source src="{{ url_for('static', filename='anasayfa.mp4') }}" type="video/mp4">
+    </video>
+  </div>
+
+  <!-- Üst Navigasyon -->
+  <header class="navbar">
+    <div class="logo-container">
+      <img src="{{ url_for('static', filename='images/Logo.png') }}" alt="Beyond Emissions Logo" class="site-logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/brands">Brands</a></li>
+        
+        <!-- Navbar içine eklenecek -->
+        <li class="dropdown">
+          <a href="#">Emissions</a>
+          <ul class="dropdown-menu">
+            <li><a href="/common-gases">Common Gases</a></li>
+            <li><a href="/dangers">Dangers</a></li>
+            <li><a href="/solutions">Solutions</a></li>
+          </ul>
+        </li>
+
+        <!-- Dropdown Başlangıcı -->
+        <li class="dropdown">
+          <a href="#">About</a>
+          <ul class="dropdown-menu">
+            <li><a href="/standarts">Carbon Emission Standards</a></li>
+            <li><a href="/mission">Our Mission</a></li>
+            <li><a href="/about/history">History</a></li>
+          </ul>
+        </li>
+        <!-- Dropdown Bitişi -->
+
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Sayfa İçeriği -->
+  <section class="hero-text">
+    <h2>THE GREEN ZONE WITH FUTURE TECH</h2>
+    <h1>BEYOND EMISSIONS</h1>
+    <h1>DRIVE THE CHANGE</h1>
+  </section>
+
+</body>
+</html>

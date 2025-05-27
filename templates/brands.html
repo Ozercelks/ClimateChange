@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Solutions</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header class="navbar">
+    <div class="logo-container">
+      <img src="{{ url_for('static', filename='images/Logo.png') }}" alt="Beyond Emissions Logo" class="site-logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/brands">Brands</a></li>
+        <li class="dropdown">
+          <a href="#">Emissions</a>
+          <ul class="dropdown-menu">
+            <li><a href="/common-gases">Common Gases</a></li>
+            <li><a href="/dangers">Dangers</a></li>
+            <li><a href="/solutions">Solutions</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#">About</a>
+          <ul class="dropdown-menu">
+            <li><a href="/standarts">Carbon Emission Standards</a></li>
+            <li><a href="/mission">Our Mission</a></li>
+            <li><a href="/about/history">History</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="brands-container">
+    <!-- Top centered box with brand list -->
+    <div class="brands-list-box">
+      <h2>Brands Leading the Fight Against Climate Change</h2>
+      <ul class="brands-list">
+        <li>Tesla</li>
+        <li>BMW</li>
+        <li>Volvo</li>
+        <li>Toyota</li>
+        <li>Mercedes-Benz</li>
+        <li>Ford</li>
+      </ul>
+    </div>
+
+    <!-- Detailed brand sections -->
+    <section class="brand-section">
+      <img src="{{ url_for('static', filename='images/tesla.jpg') }}" alt="Tesla">
+      <h3>Tesla</h3>
+      <p>Tesla is widely recognized as a pioneer in electric vehicle technology and sustainable energy solutions. By developing electric cars with industry-leading long-range batteries and establishing a comprehensive Supercharger network, Tesla has made it easier for consumers to adopt zero-emission transportation. Their mission is to accelerate the global shift away from fossil fuels, reducing harmful greenhouse gas emissions that drive climate change. Beyond cars, Tesla’s investments in solar energy and battery storage solutions further support a sustainable energy ecosystem.</p>
+    </section>
+
+    <section class="brand-section">
+      <img src="{{ url_for('static', filename='images/bmw.jpg') }}" alt="BMW">
+      <h3>BMW</h3>
+      <p>BMW has taken significant steps towards sustainability by investing heavily in electric and hybrid technologies. They plan to electrify a large percentage of their vehicle fleet by 2030, aiming to reduce emissions across all stages of a vehicle’s lifecycle—from production to end-of-use. BMW also emphasizes sustainable manufacturing, including reducing waste, lowering water usage, and increasing the use of recycled materials. These efforts align with their broader goal to minimize the carbon footprint of their vehicles and operations, contributing to global climate targets.</p>
+    </section>
+
+    <section class="brand-section">
+      <img src="{{ url_for('static', filename='images/volvo.jpeg') }}" alt="Volvo">
+      <h3>Volvo</h3>
+      <p>Volvo stands out for its bold commitment to climate action by pledging that all new cars launched from 2030 onward will be fully electric or hybrids. Their approach also includes using recycled and renewable materials in car production to lessen environmental impact. Volvo actively promotes renewable energy in its manufacturing plants and supply chains, further driving emission reductions. The company’s holistic sustainability strategy positions it as a leader in fighting climate change within the automotive industry.</p>
+    </section>
+
+    <section class="brand-section">
+      <img src="{{ url_for('static', filename='images/toyota.jpg') }}" alt="Toyota">
+      <h3>Toyota</h3>
+      <p>Toyota revolutionized the automotive industry with the introduction of the Prius, the world’s first mass-produced hybrid car. This innovation significantly lowered carbon emissions compared to traditional gasoline vehicles. Today, Toyota continues to advance fuel-efficient and low-emission technologies, including hybrid electric vehicles and hydrogen fuel cell cars. Their ongoing research and development efforts aim to create cleaner, more sustainable transportation solutions that address air pollution and climate change challenges worldwide.</p>
+    </section>
+
+    <section class="brand-section">
+      <img src="{{ url_for('static', filename='images/mercedes.jpg') }}" alt="Mercedes-Benz">
+      <h3>Mercedes-Benz</h3>
+      <p>Mercedes-Benz is making sustainability a priority by integrating electric mobility into its luxury vehicle lineup through the EQ brand. The company invests heavily in battery technology to improve performance and reduce environmental impact. Mercedes-Benz also focuses on reducing CO₂ emissions during vehicle production and throughout the vehicle’s life cycle, including recycling and energy-efficient manufacturing processes. Their commitment to combining luxury with eco-consciousness helps set new standards for sustainable automotive excellence.</p>
+    </section>
+
+    <section class="brand-section">
+      <img src="{{ url_for('static', filename='images/ford.jpg') }}" alt="Ford">
+      <h3>Ford</h3>
+      <p>Ford is rapidly advancing its commitment to sustainability with an expanding electric vehicle portfolio, including popular models like the Mustang Mach-E. The company invests in clean energy manufacturing processes and aims to reduce greenhouse gas emissions across its operations. Ford also supports the development of sustainable supply chains and emphasizes the importance of affordable, accessible electric vehicles to make climate-friendly transportation options available to a wider audience. These efforts contribute to global goals to mitigate climate change and improve air quality.</p>
+    </section>
+
+  </div>
+</body>
+</html>
